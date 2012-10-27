@@ -41,7 +41,7 @@ var Pianist = (function() {
 
       // make the keypressed lower case if we're dealing with a combo,
       // as using Shift will change the result and not work.
-      if (modifiers.length > 0) {
+      if (modifiers) {
         key = [modifiers, keyPressed].join('+');
       } else {
         key = keyPressed;
@@ -63,7 +63,7 @@ var Pianist = (function() {
       modifiers.push('Alt');
     }
 
-    return modifiers.length > 0 ? modifiers.join('+') : '';
+    return modifiers.length > 0 ? modifiers.join('+') : false;
   };
 
   return Pianist;
