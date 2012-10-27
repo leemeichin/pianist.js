@@ -36,6 +36,8 @@ characters, or characters that can only be accessed by holding Shift
 (like symbols). `Ctrl+?` is technically the same as `Ctrl+Shift+/`,
 while arguably making your bindings more semantic at the expense of verbosity.
 
+It's also a browser limitation.
+
 ### Removing handlers ###
 Suppose you no longer want to listen for a certain keypress event. You
 can remove it by simply calling `remove`.
