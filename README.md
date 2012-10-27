@@ -10,7 +10,7 @@ having to faff about with all that.
 ## Getting started ##
 Simply include the script, and then do something like this:
 
-```
+```javascript
 var pianist = new Pianist();
 pianist.add('?', function(evt, keyPressed) {
   // do something when someone presses '?'
@@ -21,7 +21,7 @@ pianist.add('?', function(evt, keyPressed) {
 You can add events to certain key combinations, too, using a basic
 string format:
 
-```
+```javascript
 pianist.add('Ctrl+?', function() {
   // do something when someone presses Control and '?'
 });
@@ -42,7 +42,7 @@ It's also a browser limitation.
 Suppose you no longer want to listen for a certain keypress event. You
 can remove it by simply calling `remove`.
 
-```
+```javascript
 pianist.remove('?'); // event handler will no longer be fired
 ```
 
